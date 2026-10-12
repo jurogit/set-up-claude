@@ -64,31 +64,13 @@ Items 4–27 of the Allow list are left out here: 24 `mcp__computer-use__*` rule
 
 ### "How do I run the tests here?"
 
-Claude answered in Hungarian, as my global `~/.claude/CLAUDE.md` asks. This is the English translation it gave on request:
+Claude answered in Hungarian, as my global `~/.claude/CLAUDE.md` asks. This is the English translation it gave on request, shortened: the explanatory sentences under each command are left out.
 
 > Tests run on Node's built-in test runner (`node:test`), not Jest or Mocha.
 >
-> **Run all tests:**
->
-> ```bash
-> npm test
-> ```
->
-> This runs `node --test`, which finds the `*.test.js` files on its own. Right now the only one is `tests/users.test.js`. If `node_modules` doesn't exist yet, run `npm install` first, because the tests need `supertest`.
->
-> **Run a single test by name:**
->
-> ```bash
-> node --test --test-name-pattern="404" tests/users.test.js
-> ```
->
-> `--test-name-pattern` is a regex matched against the test name. Replace `"404"` with part of the name of the test you want to run.
->
-> **Before committing**, run the linter too, because CI (`.github/workflows/ci.yml`) runs both on Node 22:
->
-> ```bash
-> npm run lint && npm test
-> ```
+> - Run all tests: `npm test`
+> - Run a single test by name: `node --test --test-name-pattern="404" tests/users.test.js`
+> - Before committing, run the linter too, because CI (`.github/workflows/ci.yml`) runs both on Node 22: `npm run lint && npm test`
 
 ### `git push`
 
