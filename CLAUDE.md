@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 Small Express 4 REST API (users + health check) backed by an in-memory store — the starter project for the Kodree Claude Code course.
 
 ## Commands
