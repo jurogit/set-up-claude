@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json.schemastore.org/claude-code-settings.json",
+    "permissions": {
+        "allow": [
+            "Bash(npm test *)",
+            "Bash(npm run lint *)"
+        ],
+        "ask": [
+            "Bash(git push *)"
+        ],
+        "deny": [
+            "Read(./.env)",
+            "Bash(git push --force*)",
+            "Bash(git push -f*)",
+            "Bash(git push * --force*)",
+            "Bash(git push * -f*)"
+        ]
+    }
+}
