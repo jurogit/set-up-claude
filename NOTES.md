@@ -89,3 +89,7 @@ Claude answered in Hungarian, as my global `~/.claude/CLAUDE.md` asks. This is t
 > ```bash
 > npm run lint && npm test
 > ```
+
+### `git push`
+
+When Claude ran `git push -u origin set-up-claude`, the `Bash(git push *)` ask rule showed me a permission prompt before the push ran.
